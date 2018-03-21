@@ -1,0 +1,17 @@
+<!--contact.wxml-->
+<!-- 联系我们页面 -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='contact-box'>
+    <text>联系方式</text>
+    <view class='contact-mode'>
+      <input type='text' placeholder='手机号/邮箱/QQ皆可' placeholder-class="phcolor" name="feedback_info"></input>
+    </view>
+    <text>反馈说明</text>
+    <view class='contact-back'>
+       <textarea class='textarea1' maxlength="-1" placeholder="请详细说明您的意见或建议" name="feedback_contact" placeholder-class="phcolor"/>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提<text class='space'>123456</text>交</button>
+    </view>
+  </view>
+</form>

@@ -1,0 +1,11 @@
+@import '../../utils/font/stylesheet.wxss';
+
+/* 详情页面开始 */
+
+.info-box{
+  padding: 20rpx 10rpx;
+  word-wrap:break-word;
+}
+.info-box image{
+  max-width: 100%;
+}

@@ -1,0 +1,42 @@
+<!--data.wxml-->
+<!-- 个人资料页面 -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='data-box'>
+    <!-- <view class='data-every data-frist' bindtap='replace'>
+      <view class='data-left fl'>头像</view>
+      <view class='data-right-image fr'>
+        <view class='data-image'>
+         <image src="{{head}}"></image>
+        </view>
+      </view>
+    </view> -->
+    <view class='data-every data-frist'>
+      <view class='data-left fl'>姓名</view>
+      <view class='data-right fr'>
+        <input type='text' placeholder='请填写真实姓名' name="user_name" value='{{userInfo.user_name}}'></input>
+      </view>
+    </view>
+    <view class='data-every'>
+      <view class='data-left fl'>出生日期</view>
+      <view class='data-right fr'>
+        <input type='text' placeholder='比如1995-07-06' name="date" value='{{userInfo.date}}'></input>
+      </view>
+    </view>
+    <view class='data-every'>
+      <view class='data-left fl'>联系地址</view>
+      <view class='data-right fr'>
+        <input type='text' placeholder='' name="location" value='{{userInfo.location}}'></input>
+      </view>
+    </view>
+    <view class='data-every'>
+      <view class='data-left fl'>联系电话</view>
+      <view class='data-right fr'>
+        <input type='text' placeholder='' name="phone" value='{{userInfo.phone}}'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">提<text class='space'>123456</text>交</button>
+  </view>
+</form>

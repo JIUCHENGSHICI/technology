@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.user_head}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.user_name}}</text>
+ 
+  </view>
+  <view class="usermotto">
+ 
+    <button type="primary"  bindtap="primary" bindtap='link'>成为下线</button>
+    <button type="default" bindtap="default" bindtap='back'>取消</button>
+  </view>
+</view>

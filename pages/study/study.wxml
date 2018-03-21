@@ -1,0 +1,13 @@
+<!--pages/study/study.wxml-->
+<!-- 学习天地 -->
+
+<view class='study-list item-study' bindtap="golearning">
+  <image src='http://jiuchengshici.gitee.io/wx/project_study.png'></image>
+    <text class='iconfont icon-shuben1 style-icon'></text>
+    <text class='style-title'>项目学习</text>
+</view>
+<view class='study-list item-study' bindtap="gocause">
+  <image src='http://jiuchengshici.gitee.io/wx/cause-study.png'></image>
+    <text class='iconfont icon-jiangbei style-icon'></text>
+    <text class='style-title'>事业学习</text>
+</view>

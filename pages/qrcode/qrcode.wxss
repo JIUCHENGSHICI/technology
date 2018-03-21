@@ -1,0 +1,19 @@
+.my-qrcode{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}    
+.bc{
+  width: 90%;
+  height: 900rpx;
+} 
+.two-code{
+  width: 420rpx;
+  height: 450rpx;
+  position: absolute;
+  top: 400rpx;
+  left: 200rpx;
+  bottom: 0rpx;
+  right: 0rpx;
+  border-radius: 10rpx;
+}

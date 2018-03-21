@@ -1,0 +1,45 @@
+/* pages/study/study.wxss */
+@import '../../utils/font/stylesheet.wxss';
+
+
+
+.item-study image {
+  height: 350rpx;
+  width: 100%;
+}
+
+.cause-study {
+  background: green;
+}
+
+.study-list {
+  height: 350rpx;
+  background-size: cover;
+  margin-top: 20rpx;
+  color: #fff;
+  position: relative;
+}
+
+.style-title {
+  font-size: 90rpx;
+  font-weight: bold;
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 100rpx;
+  line-height: 350rpx;
+   text-align: right; 
+}
+
+.style-icon {
+  font-size: 85rpx;
+  padding-right: 15rpx;
+  color: white;
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  left: 160rpx;
+  right: 0rpx;
+  line-height: 350rpx;
+}

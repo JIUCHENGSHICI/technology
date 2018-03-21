@@ -1,0 +1,70 @@
+<!-- 我的 -->
+<!-- style='background-image:url(../../utils/assets/img/lunbo1.png)' -->
+
+<!-- 顶部的导航栏的开始 -->
+<view class='user-top' bindtap="godata">
+  <!-- 左边的包括头像和名字开始 -->
+  <view class='left'>
+   <!-- 头像开始 -->
+    <view class='user-headimg'>
+      <image src="{{userInfo.user_head}}" background-size="cover"></image>
+    </view>
+   <!-- 头像结束 -->
+   <!-- 名字和等级开始 -->
+    <view class='user-info'>
+      <text class='user-name one-line'>{{userInfo.user_name}}</text>
+      <view class='user-grade'>
+        <view class='user-fk'>
+          <text>{{userInfo.level}}</text>
+        </view>
+        <view class='left-circular'>
+          <text class='iconfont icon-huangguan head-left-icon'></text>
+        </view>
+      </view>
+    </view>
+   <!-- 名字和等级结束 -->
+  </view>
+  <!-- 左边的头像和名字结束 -->
+  <view class='right fr'>
+    <text class='iconfont icon-zuoyoujiantou-copy fr head-right-icon'></text>
+  </view>
+</view>
+<!-- 顶部的导航栏结束 -->
+
+<!-- 底部的列表开始 -->
+<view id=''>
+
+  <view class='user-bottom' bindtap="goqrcode">
+    <text class='iconfont icon-wodeerweima1 list-left-icon'></text>
+    <text class=''>我的二维码</text>
+    <text class='iconfont icon-zuoyoujiantou-copy fr list-right-icon'></text>
+  </view>
+
+  <view class='user-bottom' bindtap="gomessage">
+    <text class='iconfont icon-cmstubiaozitihua15 list-left-icon'></text>
+    <text class=''>我的消息</text>
+    <text class='iconfont icon-zuoyoujiantou-copy fr list-right-icon'></text>
+     <view class='message-number fr {{isShow}}'>
+      <text>{{noReadCount}}</text>
+    </view> 
+  </view>
+
+  <view class='user-bottom' bindtap="gofriend">
+    <text class='iconfont icon-yonghu list-left-icon'></text>
+    <text class=''>我的伙伴</text>
+    <text class='iconfont icon-zuoyoujiantou-copy fr list-right-icon'></text>
+  </view>
+
+  <view class='user-bottom' bindtap="gocontact">
+    <text class='iconfont icon-xiaoxi list-left-icon'></text>
+    <text class=''>联系我们</text>
+    <text class='iconfont icon-zuoyoujiantou-copy fr list-right-icon'></text>
+  </view>
+
+  <view class='user-bottom' bindtap="saomiao">
+    <text class='iconfont icon-erweimasaomiao list-left-icon saomiao'></text>
+    <text class='saoma'>扫码</text>
+    <text class='iconfont icon-zuoyoujiantou-copy fr list-right-icon'></text>
+  </view>
+</view>
+<!-- 底部的列表结束 -->

@@ -1,0 +1,154 @@
+@import '../../utils/font/stylesheet.wxss';
+@import '../../utils/saomiao/stylesheet.wxss';
+/* pages/user/search.wxss */
+
+.user-top {
+  height: 140rpx;
+  padding-top: 20rpx; 
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  background-image: url(http://jiuchengshici.gitee.io/wx/user.jpg);
+  background-size: cover;
+  margin-bottom: 15rpx;
+}
+
+.user-headimg {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 1rpx solid #21a19e;
+  float: left;
+}
+
+.user-top image {
+  width: 100%;
+  height: 120rpx;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* 用户名和等级的样式 */
+.user-info{
+  height: 120rpx;
+  position: relative;
+  margin-left: 140rpx;
+}
+.user-name {
+  position: absolute;
+  top: 16rpx;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+}
+
+.user-grade {
+  width: 140rpx;
+  height: 32rpx;
+  display: inline-block;
+  position: absolute;
+  bottom: 16rpx; 
+}
+
+.user-fk {
+  width: 80rpx;
+  height: 32rpx;
+  background: red;
+  border-radius: 40rpx 140rpx 140rpx 180rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 32rpx;
+  padding-left: 30rpx;
+}
+
+.left-circular {
+  width: 40rpx;
+  height: 40rpx;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0rpx;
+  border: 1rpx solid red;
+  text-align: center;
+  line-height: 34rpx;
+}
+
+.left {
+  width: 70%;
+  float: left;
+}
+
+.right {
+  width: 20%;
+  line-height: 120rpx;
+  /* background: #00f; */
+}
+
+/* 顶部导航的两个图标的样式 */
+.head-left-icon{
+  color: #ff0000;
+  font-size: 32rpx;
+}
+.head-right-icon{
+  font-size: 60rpx;
+  color: #fff;
+}
+
+/* 用户的列表开始 */
+.user-bottom{
+   padding: 36rpx 40rpx 36rpx 50rpx; 
+   border-bottom: 1rpx solid #e8e8e8;
+   /* border-bottom: 1px solid #929292; */
+}
+
+/* 列表右侧的图标 */
+.list-right-icon{
+   font-size: 60rpx;
+   line-height: 52rpx; 
+   color: #000;
+}
+.list-left-icon{
+  padding-right: 20rpx;
+  color: #10878d; 
+}
+/* 我的消息那个红色的角标的样式 */
+.message-number{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  background: #ff0000;
+  line-height: 52rpx; 
+  margin-right: 20rpx;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 25rpx;
+    display: none; 
+}
+
+.show{
+  display: inline-block;
+}
+/* 用户的列表结束 */
+
+
+/* 左侧图标分别设置大小 */
+.user-bottom .icon-wodeerweima1{
+  font-size: 38rpx;
+  padding-right: 15rpx;
+}
+.user-bottom .icon-cmstubiaozitihua15{
+  font-size: 56rpx;
+  padding-right: 5rpx;
+}
+.user-bottom .icon-yonghu{
+  font-size: 50rpx;
+  padding-right: 12rpx;
+}
+.user-bottom .icon-xiaoxi{
+  font-size: 44rpx;
+  padding-right: 19rpx;
+}
+
+.user-bottom .saomiao{
+  font-size: 40rpx;
+  padding-right: 24rpx;
+}

@@ -1,0 +1,62 @@
+@import '../../utils/font/stylesheet.wxss';
+
+/*  项目学习  页面开始 */
+
+
+.learning-every.index0{
+   border-top: none;
+   margin-top: 30rpx;
+}
+.learning-every {
+  border-top: 0.1rpx solid #d6d6d6;
+}
+
+/* 列表的每一个 */
+
+.learning-every {
+  height: 200rpx;
+  /* background: #f00; */
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  padding-left: 30rpx;
+}
+
+/* 里边的左侧的 */
+
+.learning-left {
+  width: 30%;
+  height: 200rpx;
+  text-align: center;
+  line-height: 330rpx;
+}
+.learning-image-box{
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+}
+.learning-left image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.learning-right {
+  width: 65%;
+  height: 200rpx;
+}
+/* 标题的样式 */
+.learning-title {
+  font-size: 34rpx;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10rpx;
+  color: #000000;
+}
+
+.learning-test {
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  color: #000000;
+  padding-right: 30rpx;
+}
+
+
+

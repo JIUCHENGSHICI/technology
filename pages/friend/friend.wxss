@@ -1,0 +1,77 @@
+/* pages/frirnd/frirnd.wxss */
+@import '../../utils/font/stylesheet.wxss';
+/* 我的伙伴开始  */
+
+/* 每一个伙伴信息的总的容器 */
+
+.friend-every {
+  height: 120rpx;
+  border-bottom: 0.1rpx solid #e9e9e9;
+  padding: 20rpx 20rpx;
+}
+.first0{
+  border-top: 0.1rpx solid #e9e9e9; 
+} 
+/* 伙伴的头像的容器样式 */
+.friend-first{
+   border-top: 0.1rpx solid #e9e9e9; 
+  /* margin-top: 30rpx; */
+}
+.friend-image-box {
+  width: 120rpx;
+  height: 120rpx;
+  border: 0.1rpx solid #e5e5e5;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20rpx;
+}
+.friend-image{
+  width: 100%;
+  height: 120rpx;
+  border-radius: 50%;
+}
+/* 右侧信息的容器 */
+ .firend-info-box{
+   position: relative;
+   height: 120rpx;
+} 
+/* 伙伴的名字 */
+.friend-name{
+  position: absolute;
+  top: 5rpx;
+}
+
+/* 伙伴等级 */
+.friend-grade{
+  width: 130rpx;
+  height: 40rpx;
+  display: inline-block;
+  position: absolute;
+  bottom: 5rpx;
+}
+.fk{
+  width: 100rpx;  
+  height: 40rpx;
+  background: #ff0000;
+  border-radius: 50rpx 100rpx 100rpx 150rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  padding-left: 25rpx;
+}
+.friend-circle{
+  width: 50rpx;
+  height: 50rpx;
+  background: #fff;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 50%;
+  border: 1px solid #ff0000;
+  text-align: center;
+  line-height: 50rpx;
+  color: #ff0000;
+}
+.circle-icon{
+  font-size: 40rpx;
+}

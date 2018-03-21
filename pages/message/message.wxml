@@ -1,0 +1,28 @@
+<!--message.wxml-->
+<!-- 我的消息 -->
+<view class='message-content'>
+  <!-- 每一项开始 -->
+  <view class='message-list {{"first"+index}}' bindtap="gopaper" data-id="{{idx}}" wx:for="{{array}}"  wx:for-index="idx" id='{{item.paper_id}}'>
+    <view class='message-list-top'>
+      <view class='message-top-left fl'>
+        <text class='one-line'>{{item.paper_title}}</text>
+      </view>
+      <view class='message-top-right fr'>
+        <text class=''>{{item.add_time}}</text>
+      </view>
+    </view>
+    <view class='message-list-bottom'>
+      <view class='message-bottom-left fl'>
+        <text class='three-line'>{{item.paper_info}}
+        </text>
+      </view>       
+      <view class='message-bottom-right fr'>
+        <image src='https://hqsqxx.com/yan/{{item.paper_head}}'></image>
+      </view>
+      <view></view>
+    </view>
+
+    <view class='read {{item.class}}'></view>
+  </view>
+  <!-- 每一项结束 -->
+</view>

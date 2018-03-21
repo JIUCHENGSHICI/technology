@@ -1,0 +1,30 @@
+@import '../../utils/font/stylesheet.wxss';
+
+/* 事业学习页面开始 */
+.cause-box{
+  margin-top: 50rpx;
+}
+
+.cause-list{
+  height: 260rpx;
+  background-size: cover;
+  margin-top: 20rpx;
+  text-align: center;
+  line-height: 260rpx;
+  color: #fff;
+  position: relative;
+}
+.cause-list image{
+  width: 100%;
+  height: 260rpx;
+}
+.cause-title{
+  font-size: 55rpx;
+  font-weight: bold;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  bottom: 0rpx;
+  right: 0rpx;
+  line-height: 260rpx;
+}

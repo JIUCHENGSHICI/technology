@@ -1,0 +1,24 @@
+<!--pages/frirnd/frirnd.wxml-->
+<!-- 我的伙伴开始 -->
+<view class='friend-list'>
+  <!-- 列表开始 -->
+  <view class='friend-every {{"first"+index}}' wx:for="{{array}}" id='user_id' bindtap='gogogo'>
+    <view class='friend-image-box'>
+      <image src='{{item.user_head}}' class='friend-image'></image>
+    </view>
+    <!-- 右侧的信息 开始 -->
+    <view class='firend-info-box'>
+      <text class='friend-name'>{{item.user_name}}</text>
+      <view class='friend-grade'>
+        <view class='friend-circle'>
+          <text class='iconfont icon-huangguan circle-icon'></text>
+        </view>
+        <view class='fk'>
+          <text>{{item.level}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 右侧的信息结束 -->
+  </view>
+  <!-- 列表结束 -->
+</view>

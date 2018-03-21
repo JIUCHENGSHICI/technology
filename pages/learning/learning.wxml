@@ -1,0 +1,21 @@
+<!--learning.wxml-->
+<!-- 项目学习 -->
+<view class='learning-box'>
+  <!-- 每一个开始 -->
+  <view class='learning-every {{"index"+index}}' bindtap="gopaper" wx:for="{{array}}" id='{{item.project_id}}'>
+    <!-- 左侧开始 -->
+    <view class='learning-left fl'>
+      <view class='learning-image-box'>
+        <image src='https://hqsqxx.com/yan/{{item.project_head}}'></image>
+      </view>
+    </view>
+    <!-- 左侧结束 -->
+    <!-- 右侧开始 -->
+    <view class='learning-right fr'>
+      <view class='learning-title a-line'>{{item.project_title}}</view>
+      <view class='learning-test three-line'>{{item.project_info}}</view>
+    </view>
+    <!-- 右侧结束 -->
+  </view>
+  <!-- 每一个结束 -->
+</view>

@@ -1,0 +1,69 @@
+<!--index.wxml-->
+
+<!-- 顶部的输入框 开始-->
+<view class='app-container' bindtap="gosearch">
+  <view class="section app-input">
+    <text class='iconfont icon-fangdajing index-top-icon'></text> 请输入您要搜索的项目或案例
+  </view>
+</view>
+<!-- 顶部的输入框 结束-->
+<!-- 轮播开始 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='app-swiper'>
+  <block wx:for="{{carousel}}">
+    <swiper-item>
+      <image src="https://hqsqxx.com/yan/{{item.carousel_url}}" class="slide-image" width="10" height="1500" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 轮播结束 -->
+<!-- 轮播下边的图片开始 -->
+
+<!-- 公司介绍 -->
+<view class="page app-img-box" bindtap='gopaper2'>
+  <view class="page__bd">
+    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
+      <view class="section__ctn">
+        <image mode="{{item.mode}}" src="{{src}}" class='app-img'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 轮播下边的图片结束 -->
+
+<!-- <view class='bottom-box'>
+  <scroll-view scroll-x="true" class='index-scroll-box' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}">
+    <view class='scroll-every' bindtap="goqrcode" wx:for="{{scroll}}" id='{{item.carousel_id}}'>
+      <image src='{{item.carousel_url}}'></image>
+    </view>
+  </scroll-view>
+</view> -->
+<!-- 底部轮播开始 -->
+<swiper indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}" class='bottom-swiper'>
+  <block wx:for="{{scroll}}">
+    <swiper-item>
+      <view wx:if="{{item.length < 2}}">
+        <view class='swiper-item paperItem-box left'>
+          <view class='bottom-swiper-box paperItem' wx:for-item="paperItem" wx:for-index="_i" wx:for="{{item}}" bindtap='gopaper' id='{{paperItem.paper_id}}'>
+            <image src="https://hqsqxx.com/yan/{{paperItem.paper_head}}" class="bottom-slide-image" />
+          </view>
+        </view>
+      </view>
+      <!-- wx:elif="{{item.length == 1}}" -->
+      <view wx:else>
+        <view class='swiper-item paperItem-box'>
+          <view class='bottom-swiper-box paperItem' wx:for-item="paperItem" wx:for-index="_i" wx:for="{{item}}" bindtap='gopaper' id='{{paperItem.paper_id}}'>
+            <image src="https://hqsqxx.com/yan/{{paperItem.paper_head}}" class="bottom-slide-image" />
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+
+
+
+
+
+
+
+  </block>
+</swiper>
+<!-- 底部轮播结束 -->

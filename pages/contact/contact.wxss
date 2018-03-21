@@ -1,0 +1,65 @@
+@import '../../utils/font/stylesheet.wxss';
+
+/* 联系我们页面开始 */
+
+.contact-box {
+  margin-top: 50rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+.contact-mode {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.contact-mode input {
+  border: 1px solid #d8d8d8;
+  padding: 20rpx 20rpx;
+  border-radius: 15rpx;
+}
+.contact-back{
+  border: 1px solid #d8d8d8;
+  padding: 20rpx 20rpx;
+  border-radius: 15rpx;
+  margin-top: 10rpx;
+}
+.contact-back textarea{
+  width: 100%;
+}
+.contact-mode input .phcolor {
+  color: #c1c1c1;
+  font-size: 33rpx;
+}
+.contact-back textarea .phcolor {
+  color: #c1c1c1;
+  font-size: 33rpx;
+}
+
+.contact-back {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.contact-back input {
+  border: 1px solid #d8d8d8;
+  padding-top: 20rpx;
+  padding-bottom: 120rpx;
+  padding-left: 20rpx;
+  border-radius: 15rpx;
+}
+
+.contact-back input .phcolor {
+  color: #c1c1c1;
+  font-size: 33rpx;
+}
+
+.btn-area button {
+  margin-top: 50rpx;
+  color: #fff;
+  background: #008086;
+}
+/* 按钮里边的空格 */
+.space{
+  color: #008086;
+}

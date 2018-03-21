@@ -1,0 +1,53 @@
+<!--project.wxml-->
+<!-- 项目介绍 -->
+<!-- 顶部的输入框 开始-->
+<view class='app-container' bindtap="gosearch">
+  <view class="section app-input">
+    <text class='iconfont icon-fangdajing index-top-icon'></text> 请输入您要搜索的项目或案例
+  </view>
+</view>
+<!-- 顶部的输入框 结束-->
+<!-- 底部的 选项卡开始 -->
+<view class='project-bottom'>
+  <!-- 左侧开始 -->
+  <view class='project-left fl nav'>
+    <view class="{{selected?'red':'default'}}" bindtap="selected">大医美</view>
+    <view class="{{selected1?'green':'default'}}" bindtap="selected1">大健康</view>
+  </view>
+  <!-- 左侧结束 -->
+  <!-- 右侧开始 -->
+  <view class='project-right fr'>
+    <!-- 大医美右边的容器开始 -->
+    <view class="{{selected?'show':'hidden'}} big_beautiful">
+      <!-- 每一个开始 -->
+      <view class='beautiful-every' bindtap="golearning" wx:for="{{array_beautiful}}" id='{{item.project_id}}'>
+        <view class='beautiful-image'>
+          <image src='https://hqsqxx.com/yan/{{item.project_head}}'></image>
+        </view>
+        <view class='two-line'>
+          <text class='beautiful-list-title'>{{item.project_title}}</text>
+        </view>
+      </view>
+      <!-- 每一个结束 -->
+    </view>
+    <!-- 大医美右边的容器结束 -->
+    <!-- 大健康右边的容器开始 -->
+    <view class="{{selected1?'show':'hidden'}} big_health">
+      <!-- 大健康每一项的开始 -->
+      <!-- 每一个开始 -->
+      <view class='beautiful-every' bindtap="gopaper" wx:for="{{array_health}}" id='{{item.project_id}}'>
+        <view class='beautiful-image'>
+          <image src='https://hqsqxx.com/yan/{{item.project_head}}'></image>
+        </view>
+        <view class='two-line'>
+          <text class='beautiful-list-title'>{{item.project_title}}</text>
+        </view>
+      </view>
+      <!-- 每一个结束 -->
+      <!-- 大健康每一项的结束 -->
+    </view>
+    <!-- 大健康右边的容器结束 -->
+  </view>
+  <!-- 右侧结束 -->
+</view>
+<!-- 底部的 选项卡结束 -->

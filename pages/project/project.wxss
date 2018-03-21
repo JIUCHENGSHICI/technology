@@ -1,0 +1,214 @@
+@import '../../utils/font/stylesheet.wxss';
+
+.app-container {
+  text-align: center;
+   margin-bottom: 30rpx; 
+}
+
+/* 这个是input直接的父容器 设置样式 */
+
+/* 去掉原本的input框直接加汉字 */
+
+.app-input {
+  background: #f4f4f4;
+  width: 80%;
+  text-align: center;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+  border-radius: 30rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #3a3937;
+}
+.index-top-icon{
+  font-size: 30rpx;
+}
+/* 设置轮播图的外边距 和上边的input撑开 */
+
+
+/* 顶部的搜索的容器  开始*/
+
+.project-sousuo-box {
+  height: 80rpx;
+  padding-top: 20rpx;
+  text-align: center;
+}
+
+.project-sousuo {
+  height: 60rpx;
+  background: #f4f4f5;
+  width: 80%;
+  display: inline-block;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.project-top-icon {
+  padding-right: 8rpx;
+  font-size: 30rpx;
+}
+
+/* 顶部的搜索的容器  结束*/
+
+/* 设置搜索下边的整个的 背景颜色 */
+
+.project-bottom {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  position: relative;
+  top: 0rpx;
+  bottom: 0rpx;
+}
+
+/* 底边的选项卡的左边 */
+
+.project-left {
+  width: 26%;
+  height: 100%;
+  background: #eaeaea;
+}
+
+.project-right {
+  width: 74%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* 选项卡的切换样式 */
+
+.default {
+  line-height: 86rpx;
+  text-align: center;
+  flex: 1;
+  color: #000;
+  font-size: 34rpx;
+}
+
+.red {
+  line-height: 86rpx;
+  text-align: center;
+  color: #000;
+  flex: 1;
+  border-left: 3px solid #079793;
+  background: #fee9e8;
+  font-size: 34rpx;
+}
+
+.green {
+  line-height: 86rpx;
+  text-align: center;
+  color: #000;
+  flex: 1;
+  border-left: 3px solid #079793;
+  background: #f6f5fd;
+  font-size: 34rpx;
+}
+
+.show {
+  display: block;
+  /* background: green; */
+  height: 100%;
+  overflow: auto;
+  padding-top: 30rpx;
+  padding-left: 24rpx;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+  line-height: 200px;
+}
+
+/* 右侧列表的每一项 */
+
+.beautiful-every {
+  width: 117rpx;
+  height: 145rpx;
+  float: left;
+  margin-right: 15rpx;
+  margin-bottom: 32rpx;
+}
+
+/* 每一个的头像 */
+
+.beautiful-image {
+  width: 90rpx;
+  height: 90rpx;
+  /* background: red; */
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.beautiful-image image {
+  width: 100%;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.beautiful-list-title {
+  font-size: 28rpx;
+  display: block;
+}
+
+/* 大医美的列表 */
+
+.project-list {
+  height: 170rpx;
+  /* background: red; */
+  padding-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.project-list-image {
+  width: 30%;
+  height: 150rpx;
+  /* background: green; */
+}
+
+.project-list-image image {
+  width: 100%;
+  height: 150rpx;
+}
+
+.project-list-right {
+  width: 68%;
+  height: 150rpx;
+  /* background: blue; */
+  text-align: left;
+}
+
+.list-right-title {
+  font-size: 35rpx;
+  border-bottom: 1rpx solid gray;
+  padding-bottom: 10rpx;
+}
+
+.list-right-content {
+  font-size: 29rpx;
+  padding-top: 10rpx;
+}
+
+.big_beautiful {
+  background-image: url(http://jiuchengshici.gitee.io/wx/big_beautiful.jpg);
+  height: 97.3%;
+  background-repeat: no-repeat;
+  background-size: cover cover;
+  position: relative;
+  top: 0rpx;
+  bottom: 0rpx;
+  overflow: auto;
+}
+
+.big_health {
+  background-image: url(http://jiuchengshici.gitee.io/wx/new_health.jpg);
+  height: 97.3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0rpx;
+  bottom: 0rpx;
+  overflow: auto;
+}

@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "我的权益",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": "true",
+  "onReachBottomDistance": "50"
+}

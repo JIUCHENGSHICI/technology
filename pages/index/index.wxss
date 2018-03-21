@@ -1,0 +1,131 @@
+/**index.wxss**/
+@import '../../utils/font/stylesheet.wxss';
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* 颜邦科技开始 */
+
+/* 这个是input外边的一个容器，设置文本居中，让下边的input在html里边居中，再设置input的容器为内联块级元素 */
+
+.app-container {
+  text-align: center;
+}
+
+/* 这个是input直接的父容器 设置样式 */
+
+/* 去掉原本的input框直接加汉字 */
+
+.app-input {
+  background: #f4f4f4;
+  width: 80%;
+  text-align: center;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+  border-radius: 30rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  color: #3a3937;
+}
+.index-top-icon{
+  font-size: 30rpx;
+}
+/* 设置轮播图的外边距 和上边的input撑开 */
+
+.app-swiper {
+  margin-top: 30rpx;
+}
+
+/* 设置轮播图图片的宽高 */
+
+swiper-item image {
+  width: 100%;
+  height: 400rpx;
+}
+
+/* 图片的容器设置一个上外边距  */
+
+.app-img-box {
+  margin-top: 30rpx;
+}
+
+/* 轮播图下边的图片 */
+
+.app-img {
+  max-width: 100%;
+  width: 100%;
+  height: 280rpx;
+}
+
+/* 滚动的开始 */
+.bottom-box{
+  text-align: center;
+}
+.index-scroll-box {
+  white-space: nowrap;
+  width: 90%;
+  margin-top: 40rpx;
+  display: inline-block;
+}
+
+.scroll-every {
+  width: 205rpx;
+  height: 205rpx;
+  display: inline-block;
+  margin-right: 31rpx;
+}
+.scroll-every image{
+  width: 100%;
+  height: 205rpx;
+}
+
+/* 底部的滑动 */
+.bottom-swiper{
+
+   text-align: center; 
+  margin-top: 30rpx;
+  padding-bottom: 50rpx;
+
+  
+}
+ .swiper-item{
+   width: 100%;
+  display: inline-block;
+
+} 
+.bottom-swiper-box{
+  width:40%;
+   margin-right: 20rpx;
+  /* float: left; */
+  /* margin-right: 31rpx;  */
+  /* background: red */
+}
+ .bottom-slide-image{
+  width: 100%;
+  /* height: 235rpx;  */
+} 
+.paperItem{
+  display: inline-block;
+  /* margin: 0 10rpx; */
+}
+.paperItem-box.left{
+  text-align: left;
+}

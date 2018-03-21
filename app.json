@@ -1,0 +1,64 @@
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/study/study",
+    "pages/contact/contact",
+    "pages/user/user",
+    "pages/learning/learning",
+    "pages/project/project",
+    "pages/message/message",
+    "pages/friend/friend",
+    "pages/search/search",
+    "pages/link/link",
+    "pages/data/data",
+    "pages/qrcode/qrcode",
+    "pages/cause/cause",
+    "pages/paper/paper",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "颜邦科技",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": "false",
+    "onReachBottomDistance": "50"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "utils/assets/icon/index.png",
+        "selectedIconPath": "utils/assets/icon/index_checked.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目介绍",
+        "iconPath": "utils/assets/icon/project1.png",
+        "selectedIconPath": "utils/assets/icon/project_checked1.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习天地",
+        "iconPath": "utils/assets/icon/study.png",
+        "selectedIconPath": "utils/assets/icon/study_checked.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "utils/assets/icon/user.png",
+        "selectedIconPath": "utils/assets/icon/user_checked.png"
+      }
+    ],
+    "color": "#000000",
+    "borderStyle": "black",
+    "selectedColor": "#000000"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "component": "true"
+}

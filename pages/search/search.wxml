@@ -1,0 +1,41 @@
+<!-- 搜索页面 search-->
+<!-- 顶部的搜索框 开始 -->
+<view class='search-top'>
+  <view class="section search-input fl">
+    <view class='iconfont icon-fangdajing search-top-icon fl'></view>
+    <input placeholder-class="phcolor" auto-focus type="text" class='input-right' bindconfirm="bindconfirm" />
+  </view>
+  <view class='search-cancle fr' bindtap='goback'>取消</view>
+</view>
+<!-- 顶部的搜索框 结束 -->
+<!-- 内容开始 -->
+<view id="{{item.paper_id}}" class='app-contact {{"index"+index}}' bindtap="gopaper" wx:for="{{array}}">
+  <view class='app-left-img'>
+    <image src='https://hqsqxx.com/yan/{{item.paper_head}}'></image>
+  </view>
+  <view class='app-right-test'>
+    <view class='app-test'>
+      <text class='app-title'>{{item.paper_title}}</text>
+    </view>
+    <text class='app-sm-test'>{{item.paper_info}}</text>
+  </view>
+</view>
+<!-- 内容结束 -->
+
+
+<!-- 
+<view class="container2">
+  <view class="panel">
+    <label class="title">请输入查询内容</label>
+    <input class="inputarea"/>
+    <button bindtap='onRequest' type="primary" class="searBtn">查询</button>
+  </view>
+  <scroll-view class="article-list" style="height:500px" scroll-y="true" bindscrolltolower="nextPage">
+    <block wx:for="{{list}}">
+      <view class="list-item" index="{{index}}">
+        <view class="title">
+          <view class="title-name">{{item.title}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view> -->
